@@ -24,3 +24,16 @@ for (int j = 0; j < size; j++)
         pos++;
     }
 }
+
+WriteLine();
+WriteLine("Массивы с длинной 3 или менее символов:");
+PrintArray(arrayFinal);
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Write(array[i] + " ");
+    }
+    WriteLine();
+}
