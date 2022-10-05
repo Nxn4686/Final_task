@@ -11,3 +11,16 @@ for (int i = 0; i < size; i++)
     string element = Convert.ToString(ReadLine());
     arrayStrings[i] = element;
 }
+
+string[] arrayFinal = new string[size];
+int len = 3;                                    //Размер массива для отбора
+int pos = 0;
+
+for (int j = 0; j < size; j++)
+{
+    if (arrayStrings[j].Length <= len)
+    {
+        arrayFinal[pos] = arrayStrings[j];
+        pos++;
+    }
+}
